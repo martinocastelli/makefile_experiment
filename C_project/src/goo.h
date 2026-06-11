@@ -1,3 +1,4 @@
+#include "foo/foo.h"
 
 #define GOO 1
 

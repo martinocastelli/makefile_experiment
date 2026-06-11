@@ -1,4 +1,4 @@
 
-#define GOO_2 67
+#define GOO_2 267
 
 int goo_2(void);
