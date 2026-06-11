@@ -6,11 +6,11 @@ EXEC = main.out
 
 BUILD_DIR := ./build
 SRC_DIR := ./src
-SEARCH_DEPTH := 3
+SEARCH_DEPTH := 10
 
-SRCS := $(shell find $(SRC_DIR) -maxdepth $(SEARCH_DEPTH) -name "*.c")   # find source
-OBJS := $(SRCS:%.c=$(BUILD_DIR)/%.o)                                     # gen object
-DEPS := $(OBJS:.o=.d) # map atogen dependencies
+SRCS := $(shell find $(SRC_DIR) -maxdepth $(SEARCH_DEPTH) -name "*.c") # find source
+OBJS := $(SRCS:%.c=$(BUILD_DIR)/%.o) # gen object
+DEPS := $(OBJS:.o=.d) # map autogen dependencies
 
 CFLAGS += -MMD -MP
 
