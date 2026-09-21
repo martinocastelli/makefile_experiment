@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 // #include "foo/foo.h"
 #include "goo.h"
 #include "foo/goo_1/goo_1.h"
@@ -6,7 +7,6 @@
 #include "foo/goo_1/goo_2/goo_3/goo_3.h"
 #include "foo/goo_1/goo_2/goo_3/goo_4/goo_4.h"
 #include "foo/goo_1/goo_2/goo_3/goo_4/goo_5/goo_5.h"
-
 
 int main(void) {
 	printf("foo:   %d %d\n", foo(), FOO);
